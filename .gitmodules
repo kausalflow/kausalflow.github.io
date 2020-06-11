@@ -1,6 +1,0 @@
-[submodule "themes/meghna"]
-	path = themes/meghna
-	url = https://github.com/themefisher/meghna-hugo
-[submodule "themes/osprey"]
-	path = themes/osprey
-	url = https://github.com/tomanistor/osprey
