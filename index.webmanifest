@@ -1,0 +1,12 @@
+{
+  "name": "KausalFlow",
+  "short_name": "KausalFlow",
+  "lang": "en-us",
+  "theme_color": "#FE6019",
+  
+
+  
+  
+  "display": "standalone",
+  "start_url": "/?utm_source=web_app_manifest"
+}
