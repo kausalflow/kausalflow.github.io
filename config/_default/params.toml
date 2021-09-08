@@ -83,6 +83,13 @@ title = "KausalFlow"
 icon = "lab la-linkedin-in" # https://icons8.com/line-awesome
 link = "https://www.linkedin.com/company/kausalflow/"
 
+
+[[social]]
+title = "KausalFlow Community"
+icon = "las la-glass-cheers" # https://icons8.com/line-awesome
+link = "https://community.kausalflow.com/"
+
+
 # [[social]]
 # title = "AndromedaPin"
 # icon = "lab la-pinterest" # https://icons8.com/line-awesome
