@@ -3,7 +3,7 @@
 banner:
   title: "We automate scientific discovery."
   button: "About"
-  button_link: "https://gethugothemes.com/products/andromeda/"
+  button_link: "/about"
   # image: "images/landing/alina-grubnyak-ZiQkhI7417A-unsplash-large.jpg"
 
 
