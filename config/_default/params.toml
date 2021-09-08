@@ -1,0 +1,89 @@
+#################### default parameters ################################
+# favicon
+favicon = "logo/favicon.png"
+# logo
+logo = "logo/logo.png"
+# use `x` with logo_width, example: "100x"
+logo_width = "240x"
+# logo text will only show when logo is missing.
+logo_text = "KausalFlow"
+# OpenGraph / Twitter Card metadata
+description = "We Automate Science"
+author = "KausalFlow"
+image = "logo/logo.png" # this image will be used as fallback if a page has no image of its own
+
+# footer information
+footer_info = "We automate science."
+
+# contact form action
+contact_form_action = "" # contact form works with https://formspree.io
+
+# copyright
+copyright = "By KausalFlow; Acknowledgement: [Themefisher](https://themefisher.com/), [Gethugothemes](https://gethugothemes.com/)"
+
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
+custom_script= ""
+
+# buy premium popup
+buy_premium_popup = false
+
+# Main Sections
+mainSections= ["blog"]
+
+# contact information
+[contact_info]
+address = "Earth"
+phone = [""]
+email = ["kausalflow@gmail.com"]
+
+# imaging processing
+[imaging]
+# Default JPEG or WebP quality setting. Default is 100.
+quality = 100
+
+# Preloader
+[preloader]
+enable = true
+preloader = "logo/favicon.png" # use jpg, png, svg or gif format.
+
+# Navigation button
+[navigation_button]
+enable = true
+label = "GitHub"
+link = "https://github.com/kausalflow"
+
+# cookies
+[cookies]
+enable = false
+expire_days = 2
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+
+# call-to-action
+[cta]
+enable = true
+title = "We are still buiding it"
+content = "As you are waiting, try out the tools we have created for students and researchers."
+button = "Extras"
+button_link = "https://github.com/kausalflow"
+
+############################# social site ########################
+# [[social]]
+# title = "Andromeda"
+# icon = "lab la-facebook-f" # https://icons8.com/line-awesome
+# link = "#!"
+
+# [[social]]
+# title = "AndromedaTweet"
+# icon = "lab la-twitter" # https://icons8.com/line-awesome
+# link = "#!"
+
+[[social]]
+title = "KausalFlow"
+icon = "lab la-linkedin-in" # https://icons8.com/line-awesome
+link = "https://www.linkedin.com/company/kausalflow/"
+
+# [[social]]
+# title = "AndromedaPin"
+# icon = "lab la-pinterest" # https://icons8.com/line-awesome
+# link = "#!"
