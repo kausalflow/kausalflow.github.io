@@ -22,9 +22,21 @@ hasChildren = true
 
   [[main]]
   parent = "Extras"
+  name = "DataHerb"
+  url = "https://github.com/DataHerb/dataherb-python"
+  weight = 2
+
+  [[main]]
+  parent = "Extras"
+  name = "NeuronStar"
+  url = "https://neuronstar.github.io"
+  weight = 3
+
+  [[main]]
+  parent = "Extras"
   name = "Hugo Connectome Theme"
   url = "https://hugo-connectome.kausalflow.com/graph/"
-  weight = 3
+  weight = 4
 
   [[main]]
   parent = "Extras"

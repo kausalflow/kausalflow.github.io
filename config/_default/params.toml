@@ -49,8 +49,8 @@ preloader = "logo/favicon.png" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "GitHub"
-link = "https://github.com/kausalflow"
+label = "Community"
+link = "https://community.kausalflow.com"
 
 # cookies
 [cookies]
@@ -63,8 +63,8 @@ button = "I Accept"
 [cta]
 enable = true
 title = "We are still buiding it"
-content = "As you are waiting, try out the tools we have created for students and researchers."
-button = "Extras"
+content = "We haven't open-sourced the core project. But you can checkout some of the toys we built for you."
+button = "GitHub"
 button_link = "https://github.com/kausalflow"
 
 ############################# social site ########################
