@@ -6,23 +6,23 @@ draft: false
 # who_we_are
 who_we_are:
   enable: true
-  subtitle: "Who We Are"
-  title: "We love research"
-  description: "We love our research. But we see the problems. So we decided to change it."
+  subtitle: "the plan"
+  title: "Change is good"
+  description: "We love scientific research. We see the problems of the research community too. To build a better community, we decided to offer some help."
 
   image: "images/about/national-cancer-institute-tV-RX0beDp8-unsplash.jpg"
 
 # what_we_do
 what_we_do:
   enable: true
-  subtitle: "Our Works"
-  title: "What We Do"
+  subtitle: "Our Mission"
+  title: "Automation is Happiness"
   block:
-  - title: "Open Source"
-    content: "We believe in open source. We open source everything, including our mangement and workflows."
+  - title: ""
+    content: "We help institutes and researchers manage their research documents and data with automated workflows. Less repetitive tasks, more happiness in research."
 
-  - title: "Simplicity"
-    content: "We build simple stuff. No overcomplications. No cluttered services. Simple is beauty."
+  # - title: "Open Source"
+  #   content: "We open source our code and documents. We believe openness moves us forward."
 
 
 # our_mission
@@ -30,7 +30,7 @@ our_mission:
   enable: false
   subtitle: "OUR MISSION"
   title: "Main Vision And Mission Of Our Company"
-  description: "We were freelance designers and developers, constantly finding ourselve deep vague feedback. leaving a notes from the sticky note piece ."
+  description: "We were freelance designers and developers, constantly finding ourselves deep vague feedback. leaving a notes from the sticky note piece."
 
   image: "images/about/02.jpg"
 

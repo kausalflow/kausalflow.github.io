@@ -63,7 +63,7 @@ button = "I Accept"
 [cta]
 enable = true
 title = "We are still buiding it"
-content = "We haven't open-sourced the core project. But you can checkout some of the toys we built for you."
+content = "The core projects are being built at this moment. While you are waiting, we have some toys for fun."
 button = "GitHub"
 button_link = "https://github.com/kausalflow"
 
