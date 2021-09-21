@@ -42,7 +42,14 @@ hasChildren = true
   parent = "Extras"
   name = "Sunspot"
   url = "http://sunspot.kausalflow.com/"
+  weight = 20
+
+  [[main]]
+  parent = "Extras"
+  name = "Kirsche"
+  url = "https://github.com/kausalflow/kirsche"
   weight = 7
+
 
 # [[main]]
 # name = "Contact"
