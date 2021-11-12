@@ -50,7 +50,7 @@ preloader = "logo/favicon.png" # use jpg, png, svg or gif format.
 [navigation_button]
 enable = true
 label = "Community"
-link = "https://community.kausalflow.com"
+link = "https://github.com/kausalflow/community/discussions/"
 
 # cookies
 [cookies]
@@ -87,7 +87,7 @@ link = "https://www.linkedin.com/company/kausalflow/"
 [[social]]
 title = "KausalFlow Community"
 icon = "las la-glass-cheers" # https://icons8.com/line-awesome
-link = "https://community.kausalflow.com/"
+link = "https://github.com/kausalflow/community/discussions/"
 
 
 # [[social]]
