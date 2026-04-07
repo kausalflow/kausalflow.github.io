@@ -23,7 +23,7 @@ hasChildren = true
   [[main]]
   parent = "Extras"
   name = "Swarm Notes"
-  url = "https://github.com/kausalflow/swarm-notes"
+  url = "https://github.com/kausalflow/swarm-notes-template"
   weight = 2
 
   [[main]]
