@@ -41,7 +41,7 @@ The live plants are simulated. Their data are not measurements of a real plant: 
 
 - **Your user.** You register with a user id of your choice. It is public: it appears with your scores on the leaderboard and in comparisons. You receive a token once; keep it secret, because anyone who has it can submit in your name. You are responsible for the submissions made with your token.
 - **Review.** New users are reviewed before they appear on the leaderboard. We may approve, reject or remove a user, and leave out or remove scores, for example for an offensive or misleading user id, for submissions that break the rules, or for misuse of the sites.
-- **Rules.** A prediction for a sample may use only the data available at the time the sample was taken: the sensor data up to then, and the lab results already released. Each user submits one model. Models built with the help of AI are welcome. We may ask the best-ranked participants to describe their method.
+- **Rules.** A prediction for a sample may use only the data available at the time the sample was taken: the sensor data up to then, and the lab results already released. Each user submits one model. Models built with the help of AI are welcome.
 - **Scores.** Submissions are scored when a benchmark freezes, with the published metrics. If we find a mistake in the scoring, we may correct it and score again; we will say so on the site.
 
 ### 6. Privacy
