@@ -1,12 +1,7 @@
 #################### default parameters ################################
-# favicon
-favicon = "logo/favicon.png"
-# logo
-logo = "logo/logo.png"
-# use `x` with logo_width, example: "100x"
-logo_width = "240x"
-# logo text will only show when logo is missing.
-logo_text = "KausalFlow"
+# the mark, next to the name in the header, and the favicon (both SVG)
+logo = "logo.svg"
+favicon = "logo.svg"
 # OpenGraph / Twitter Card metadata
 description = "We Automate Science"
 author = "KausalFlow"
@@ -19,7 +14,7 @@ footer_info = "We automate science."
 contact_form_action = "" # contact form works with https://formspree.io
 
 # copyright
-copyright = "By KausalFlow; Acknowledgement: [Themefisher](https://themefisher.com/), [Gethugothemes](https://gethugothemes.com/)"
+copyright = "By KausalFlow."
 
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script= ""

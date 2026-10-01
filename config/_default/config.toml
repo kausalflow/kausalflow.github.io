@@ -1,51 +1,22 @@
 ######################## default configuration ####################
-baseURL = "/"
+# The site's own layouts (layouts/) and styles (static/css/site.css): the calm Bauhaus look it
+# shares with homeostat.kausalflow.com. The projects on the home page are in data/projects.yaml.
+baseURL = "https://kausalflow.com/"
 title = "KausalFlow"
-theme = "andromeda-light"
-# post pagination
-paginate = "6"
-# post excerpt
 summaryLength = "10"
-# google analytics
-googleAnalytics = "" # example: UA-123-45, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
-# disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
+
+[pagination]
+pagerSize = 6
 
 ############################# Modules ##############################
 [module]
 [module.hugoVersion]
-extended = true
-min = "0.83.1"
+min = "0.128.0"
 
 ############################# Outputs ##############################
 [outputs]
-home = ["HTML", "RSS", "WebAppManifest"]
-
-[imaging]
-quality = 90
-
-[caches]
-[caches.images]
-dir = ":resourceDir/_gen"
-maxAge = "720h"
-
-[caches.assets]
-dir = ":resourceDir/_gen"
-maxAge = "720h"
+home = ["HTML", "RSS"]
 
 [markup]
 [markup.goldmark.renderer]
-unsafe= true
-
-[mediaTypes]
-[mediaTypes."application/manifest+json"]
-suffixes = ["webmanifest"]
-
-[mediaTypes."text/netlify"]
-delimiter = ""
-suffixes = [""]
-
-[outputFormats]
-[outputFormats.WebAppManifest]
-mediaType = "application/manifest+json"
-rel = "manifest"
+unsafe = true

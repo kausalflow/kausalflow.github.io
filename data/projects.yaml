@@ -1,0 +1,76 @@
+# The projects on the home page. `featured` gets the large block; `projects` the grid, in this
+# order. Each project's shape and color are the Bauhaus primaries: circle, triangle or square;
+# red, yellow or blue.
+
+featured:
+  name: Homeostat
+  url: https://homeostat.kausalflow.com/
+  eyebrow: Featured project
+  tagline: Plant data that knows why it moved.
+  description: >-
+    Homeostat generates process-industry time series that behave like a real plant: closed control
+    loops, drifting instruments, hidden disturbances and lab results that arrive hours late. Every
+    value comes with the truth behind it.
+  points:
+    - title: Live plants
+      text: Simulated plants that run day and night, with sensor data every ten minutes and lab results released weekly.
+    - title: A weekly benchmark
+      text: Every Friday, predict the past week's lab results from its sensor data, on your own or with an AI coding agent.
+    - title: Open source
+      text: A Python package (pip install homeostat) under the Apache-2.0 licence, with full documentation.
+  links:
+    - name: Visit Homeostat
+      url: https://homeostat.kausalflow.com/
+    - name: Live plants
+      url: https://homeostat.kausalflow.com/live/
+    - name: Documentation
+      url: https://homeostat.kausalflow.com/docs/
+
+projects:
+  - name: HamilFlow
+    text: Datasets of simple physical systems.
+    shape: circle
+    color: red
+    links:
+      - { name: Documentation, url: "https://kausalflow.com/hamilflow/" }
+      - { name: Code, url: "https://github.com/kausalflow/hamilflow" }
+  - name: Kirsche
+    text: A Python package that builds up the connections between papers.
+    shape: triangle
+    color: yellow
+    links:
+      - { name: Documentation, url: "https://kausalflow.com/kirsche/" }
+      - { name: Code, url: "https://github.com/kausalflow/kirsche" }
+  - name: Swarm Notes
+    text: An automated research assistant that finds new papers, summarises them with AI and publishes them as a knowledge base you can browse.
+    shape: square
+    color: blue
+    links:
+      - { name: Template, url: "https://github.com/kausalflow/swarm-notes-template" }
+  - name: Research Tools
+    text: A curated list of research tools from the community.
+    shape: square
+    color: red
+    links:
+      - { name: Website, url: "https://tools.kausalflow.com/" }
+      - { name: Code, url: "https://github.com/kausalflow/tools" }
+  - name: DataHerb
+    text: A Python package to create, search and load datasets.
+    shape: circle
+    color: yellow
+    links:
+      - { name: Documentation, url: "https://dataherb.github.io/dataherb-python/" }
+      - { name: Code, url: "https://github.com/DataHerb/dataherb-python" }
+  - name: Hugo Connectome
+    text: A Hugo theme for community notes, with backlinks and a graph of the notes.
+    shape: triangle
+    color: blue
+    links:
+      - { name: Demo, url: "https://hugo-connectome.kausalflow.com/graph/" }
+      - { name: Code, url: "https://github.com/kausalflow/connectome" }
+  - name: NeuronStar
+    text: A community exploring neuroscience, machine learning, complex systems and intelligence.
+    shape: circle
+    color: blue
+    links:
+      - { name: Website, url: "https://neuronstar.github.io" }

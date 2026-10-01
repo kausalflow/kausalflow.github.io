@@ -27,7 +27,7 @@ brands_carousel:
 # features
 features:
   enable: true
-  subtitle: "Special Features"
+  subtitle: "What we care about"
   title: "Automation"
   description: "We care about the humans behind scientific discoveries. We are building systems to make the life of scientists easier. From instruments to data, from data to analytics."
   features_blocks:

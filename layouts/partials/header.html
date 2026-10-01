@@ -1,0 +1,10 @@
+{{ $here := . }}
+<header class="top">
+  <a class="mark" href="{{ "/" | relURL }}"><img src="{{ site.Params.logo | relURL }}" width="30" height="30" alt="">{{ site.Title }}</a>
+  <nav aria-label="Site">
+    {{ range site.Menus.main }}
+      <a href="{{ .URL }}"{{ if or ($here.IsMenuCurrent "main" .) (eq (strings.TrimSuffix "/" $here.RelPermalink) (strings.TrimSuffix "/" .URL)) }} aria-current="page"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+    {{ with site.Params.navigation_button }}{{ if .enable }}<a class="button secondary" href="{{ .link }}">{{ .label }}</a>{{ end }}{{ end }}
+  </nav>
+</header>

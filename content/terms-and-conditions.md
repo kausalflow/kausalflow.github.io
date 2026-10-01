@@ -1,37 +1,74 @@
 ---
 title: "Terms & Conditions"
-date: "2021-07-16"
+date: "2026-10-01"
 layout: "terms-and-conditions"
 draft: false
 
-description: "By Using The Service Or Clicking “I Agree”, The User Is Agreeing To Be Bound By This Agreement. If You Are Agreeing To This Agreement On Behalf Of Or For The Benefit Of A Company, Then The User Represents And Warrants That It Has The Necessary Authority To Agree To This Agreement On The Company’s"
+description: "The terms for using kausalflow.com and the services KausalFlow runs, such as Homeostat and its live benchmark, and what data we keep."
 ---
 
-### 1. Definitions
-We collect certain identifying personal data when you sign up to our Service such as your name, email address, PayPal address (if different from email address), and telephone number. The personal data we collect from you is disclosed only in accordance with our Terms of Service and/or this Privacy Policy.Conclude collects Slack account and access information from Users for the purposes of connecting to the Slack API and to authenticate access to information on the Conclude website. Whenever you visit our Site, we may collect non-identifying information from you, such as referring URL, browser, operating system, cookie information, and Internet Service Provider. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, this information alone cannot usually be used to identify you.The term "personal data" does not include any anonymized and aggregated data made on the basis of personal data, which are wholly owned by Conclude.
+*Last updated on 1 October 2026.*
 
-### 2. General Terms
+These terms apply to kausalflow.com and to the services KausalFlow runs under it, such as [homeostat.kausalflow.com](https://homeostat.kausalflow.com/) with its documentation, live plants and weekly benchmark (together, "the sites"). By using the sites, you agree to these terms. If you do not agree, please do not use them.
 
-#### Service Provided AS IS:
-The Service is provided for free during this pilot project, and is provided "as is" with no warranty. Conclude will provide User support for the Service, however; Conclude is not committed to any level of service or availability of the Service. A further description of the Service and our user support is available at the Site.
+### 1. Who we are
 
-#### Interoperation with Slack:
-The Service interoperates with Slack.com, and depends on the continuing availability and access to Slack. If for any reason Conclude cannot access or use Slack (including without limitation, change in terms or increase in fees charged by Slack), Conclude may not be able to provide all of the functions of its Service. No refund or credit, if applicable, will be provided for temporary unavailability of Slack (for example, maintenance windows).
+KausalFlow ("we", "us") builds open tools for research. You can reach us at [kausalflow@gmail.com](mailto:kausalflow@gmail.com).
 
-#### Company Liability:
-If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions conducted by its designated users of the Service.
+### 2. Using the sites
 
-### 4. Rules of Use
-1. must keep passwords secure and confidential;
-2. are solely responsible for User Data and all activity in their account while using the Service;
-3. must use commercially reasonable efforts to prevent unauthorized access to their account, and notify Conclude promptly of any such unauthorized access; and
-4. may use the Service only in accordance with Conclude's online user guide and all applicable laws and regulations.
+The sites are free to use. When you use them, please:
 
-#### You must not:
-* Enhance or improve User experience, our Site, or our Service.
-* Process transactions.
-* Send emails about our Site or respond to inquiries.
-* As this Privacy Policy and our Terms of Service.
+- use them lawfully, and in a way that does not harm the sites or other people;
+- keep to the limits the sites publish, such as the number of requests, registrations and submissions;
+- not try to reach what is not public: the hidden values and events of the live plants, a benchmark's lab results before they are released, other users' tokens, or the administration pages.
 
-### 5. Intellectual Property Rights
-Your information may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the privacy laws may not be as protective as those in your jurisdiction. If you choose to provide information to us, Conclude transfers Personal Information to Google Cloud Platform and processes it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
+We may block access for anyone who does not keep to these terms.
+
+### 3. Open-source software
+
+Our software is published under its own open-source licence; Homeostat, for example, is released under the Apache License 2.0. That licence governs your use of the code, and nothing in these terms limits the rights it gives you.
+
+### 4. Content and data
+
+The text and design of the sites belong to KausalFlow unless stated otherwise.
+
+You may use the data the sites publish, such as the live plants' sensor data and released lab results, for research, teaching and benchmarking, including in publications. Please cite the source, for example "Homeostat Live, KausalFlow" with a link to the site.
+
+The live plants are simulated. Their data are not measurements of a real plant: do not use them for decisions about real equipment, safety or health.
+
+### 5. The Homeostat Live benchmark
+
+- **Your user.** You register with a user id of your choice. It is public: it appears with your scores on the leaderboard and in comparisons. You receive a token once; keep it secret, because anyone who has it can submit in your name. You are responsible for the submissions made with your token.
+- **Review.** New users are reviewed before they appear on the leaderboard. We may approve, reject or remove a user, and leave out or remove scores, for example for an offensive or misleading user id, for submissions that break the rules, or for misuse of the sites.
+- **Rules.** A prediction for a sample may use only the data available at the time the sample was taken: the sensor data up to then, and the lab results already released. Each user submits one model. Models built with the help of AI are welcome. We may ask the best-ranked participants to describe their method.
+- **Scores.** Submissions are scored when a benchmark freezes, with the published metrics. If we find a mistake in the scoring, we may correct it and score again; we will say so on the site.
+
+### 6. Privacy
+
+We keep as little as we can, and we never sell data or use it for advertising.
+
+- **kausalflow.com** sets no cookies and uses no analytics, and it loads no scripts or fonts from other services. It is hosted on GitHub Pages, which may keep logs of visits, including addresses, under [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+- **homeostat.kausalflow.com** sets no cookies for visitors and uses no analytics. It is hosted on Cloudflare, which processes requests, including addresses, to deliver and protect the site, under [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/).
+- **The benchmark** keeps your user id, a hash of your token (never the token itself), when you registered, your review status, your submissions with their notes and times, and your scores. It asks for no name and no email address. To limit registrations, it keeps a keyed hash of your address and the day, from which the address cannot be recovered, and deletes it after two days. The `homeostat_live` command keeps your token on your own computer.
+- **Removal.** Write to us to have your user and its submissions removed. We may ask you to show that the user is yours.
+
+### 7. No warranty
+
+The sites, the software and the data are provided "as is", without warranty of any kind. They may contain errors, and we may change, interrupt or stop any of them at any time, including a benchmark.
+
+### 8. Liability
+
+As far as the law allows, KausalFlow is not liable for any damage that results from using the sites, the software or the data, or from being unable to use them.
+
+### 9. Other services
+
+The sites link to services we do not run, such as GitHub, PyPI and the projects' own pages. Their own terms apply there.
+
+### 10. Changes
+
+We may update these terms. The date at the top shows the last change; when it matters, we will also say so on the sites. If you keep using the sites after a change, you agree to the new terms.
+
+### 11. Contact
+
+Questions about these terms, or requests about your data: [kausalflow@gmail.com](mailto:kausalflow@gmail.com).

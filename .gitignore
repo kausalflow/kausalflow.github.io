@@ -31,3 +31,7 @@ Temporary Items
 
 # Local History for Visual Studio Code
 .history/
+
+# Hugo builds
+public/
+.hugo_build.lock
