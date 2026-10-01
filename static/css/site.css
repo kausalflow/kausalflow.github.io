@@ -94,11 +94,7 @@ h2 { margin: 0 0 8px; font-size: 28px; font-weight: 600; letter-spacing: -0.015e
 .prose h3 { margin: 32px 0 8px; font-size: 21px; font-weight: 600; }
 .prose h4 { margin: 22px 0 6px; font-size: 17px; font-weight: 600; }
 .prose code { font: 14px var(--mono); background: var(--shade); padding: 1px 4px; }
-.about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); gap: 48px; align-items: center; padding-block: 32px 56px; }
-.about img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); filter: grayscale(0.35); }
-.blocks { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; }
-.blocks div { border-top: 2px solid var(--blue); padding-top: 12px; color: var(--text); }
-.blocks strong { display: block; color: var(--ink); font-weight: 600; margin-bottom: 4px; }
+.hero .photo { display: block; width: min(420px, 100%); height: auto; border: 1px solid var(--rule); }
 .posts { margin: 0; padding: 0; list-style: none; }
 .posts li { padding: 14px 0; border-top: 1px solid var(--rule); }
 .posts time { font: 12px var(--mono); color: var(--muted); }
@@ -115,7 +111,6 @@ footer.site .fine a { color: var(--text); }
 
 @media (max-width: 900px) {
   .featured { grid-template-columns: 1fr; gap: 32px; padding: 24px; }
-  .about { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .wrap { padding-inline: 16px; }

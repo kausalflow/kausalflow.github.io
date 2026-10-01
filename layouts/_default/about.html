@@ -1,21 +1,26 @@
 {{ define "main" }}
 {{ with .Params.who_we_are }}
-<section class="about">
+<section class="hero">
   <div>
     <p class="eyebrow">{{ .subtitle }}</p>
     <h1>{{ .title }}</h1>
     <p class="lede">{{ .description | markdownify }}</p>
+    {{ with .links }}<div class="actions">{{ range $i, $l := . }}<a class="button {{ if eq $i 0 }}primary{{ else }}secondary{{ end }}" href="{{ $l.url }}">{{ $l.name }}</a>{{ end }}</div>{{ end }}
   </div>
-  {{ with .image }}{{ with resources.Get . }}<img src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">{{ end }}{{ end }}
+  {{ with .image }}{{ with resources.Get . }}<img class="photo" src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">{{ end }}{{ else }}
+  <div class="shapes" aria-hidden="true"><span class="c"></span><span class="s"></span><span class="t"></span></div>
+  {{ end }}
 </section>
 {{ end }}
 {{ with .Params.what_we_do }}{{ if .enable }}
 <section class="section">
   <p class="eyebrow">{{ .subtitle }}</p>
   <h2>{{ .title }}</h2>
-  <div class="blocks">
-    {{ range .block }}<div>{{ with .title }}<strong>{{ . }}</strong>{{ end }}{{ .content | markdownify }}</div>{{ end }}
-  </div>
+  <ul class="care" style="margin-top: 28px">
+    {{ range $i, $b := .block }}
+    <li class="{{ index (slice "red" "yellow" "blue") (mod $i 3) }}"><strong>{{ $b.title }}</strong><span>{{ $b.content | markdownify }}</span></li>
+    {{ end }}
+  </ul>
 </section>
 {{ end }}{{ end }}
 {{ with .Content }}<section class="section prose">{{ . }}</section>{{ end }}
