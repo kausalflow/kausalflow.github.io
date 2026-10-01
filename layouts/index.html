@@ -1,0 +1,65 @@
+{{ define "main" }}
+{{ $data := site.Data.projects }}
+{{ $f := $data.featured }}
+<section class="hero">
+  <div>
+    <p class="eyebrow">{{ site.Title }}</p>
+    <h1>{{ .Params.banner.title }}</h1>
+    <p class="lede">{{ .Params.features.description }}</p>
+    <div class="actions">
+      <a class="button primary" href="{{ $f.url }}">Meet {{ $f.name }}</a>
+      <a class="button secondary" href="#projects">All projects</a>
+    </div>
+  </div>
+  <div class="shapes" aria-hidden="true"><span class="c"></span><span class="s"></span><span class="t"></span></div>
+</section>
+
+<section class="featured" id="{{ lower $f.name }}">
+  <div>
+    <p class="eyebrow">{{ $f.eyebrow }}</p>
+    <h2>{{ $f.name }}</h2>
+    <p class="tagline">{{ $f.tagline }}</p>
+    <p class="desc">{{ $f.description }}</p>
+    <ul>
+      {{ range $i, $p := $f.points }}
+      <li><i class="shape {{ index (slice "circle red" "triangle yellow" "blue") (mod $i 3) }}"></i><div><strong>{{ $p.title }}.</strong> <span>{{ $p.text }}</span></div></li>
+      {{ end }}
+    </ul>
+    <div class="actions">
+      {{ range $i, $l := $f.links }}<a class="button {{ if eq $i 0 }}primary{{ else }}secondary{{ end }}" href="{{ $l.url }}">{{ $l.name }}</a>{{ end }}
+    </div>
+  </div>
+  <figure>
+    {{ partial "homeostat-chart.html" . }}
+    <figcaption>The loop holds the temperature at its setpoint; the disturbance shows up on the valve instead. Homeostat records both, and why.</figcaption>
+  </figure>
+</section>
+
+<section class="section" id="projects" style="margin-top: 56px">
+  <p class="eyebrow">Projects</p>
+  <h2>More from KausalFlow</h2>
+  <p class="intro">Open tools, datasets and communities for research.</p>
+  <div class="projects">
+    {{ range $data.projects }}
+    <article class="project">
+      <h3><i class="shape {{ .shape }} {{ .color }}"></i>{{ .name }}</h3>
+      <p>{{ .text }}</p>
+      <div class="links">{{ range .links }}<a href="{{ .url }}">{{ .name }}</a>{{ end }}</div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+
+{{ with .Params.features }}{{ if .enable }}
+<section class="section">
+  <p class="eyebrow">{{ .subtitle }}</p>
+  <h2>{{ .title }}</h2>
+  <p class="intro">We care about the humans behind scientific discoveries.</p>
+  <ul class="care">
+    {{ range $i, $b := .features_blocks }}
+    <li class="{{ index (slice "red" "yellow" "blue") (mod $i 3) }}"><strong>{{ $b.title }}</strong><span>{{ $b.content }}</span></li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}{{ end }}
+{{ end }}

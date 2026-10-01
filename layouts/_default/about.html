@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ with .Params.who_we_are }}
+<section class="about">
+  <div>
+    <p class="eyebrow">{{ .subtitle }}</p>
+    <h1>{{ .title }}</h1>
+    <p class="lede">{{ .description | markdownify }}</p>
+  </div>
+  {{ with .image }}{{ with resources.Get . }}<img src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">{{ end }}{{ end }}
+</section>
+{{ end }}
+{{ with .Params.what_we_do }}{{ if .enable }}
+<section class="section">
+  <p class="eyebrow">{{ .subtitle }}</p>
+  <h2>{{ .title }}</h2>
+  <div class="blocks">
+    {{ range .block }}<div>{{ with .title }}<strong>{{ . }}</strong>{{ end }}{{ .content | markdownify }}</div>{{ end }}
+  </div>
+</section>
+{{ end }}{{ end }}
+{{ with .Content }}<section class="section prose">{{ . }}</section>{{ end }}
+{{ end }}

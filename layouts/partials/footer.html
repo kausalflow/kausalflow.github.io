@@ -1,0 +1,24 @@
+{{ $data := site.Data.projects }}
+<footer class="site">
+  <div class="cols">
+    <nav aria-label="Projects">
+      <h2><i class="shape circle red"></i>Projects</h2>
+      <a href="{{ $data.featured.url }}">{{ $data.featured.name }}</a>
+      {{ range first 4 $data.projects }}<a href="{{ (index .links 0).url }}">{{ .name }}</a>{{ end }}
+      <a href="{{ "/#projects" | relURL }}">All projects</a>
+    </nav>
+    <nav aria-label="Homeostat">
+      <h2><i class="shape triangle yellow"></i>Homeostat</h2>
+      <a href="https://homeostat.kausalflow.com/">Overview</a>
+      <a href="https://homeostat.kausalflow.com/docs/">Documentation</a>
+      <a href="https://homeostat.kausalflow.com/live/">Live plants</a>
+      <a href="https://homeostat.kausalflow.com/live/#benchmark">Weekly benchmark</a>
+    </nav>
+    <nav aria-label="KausalFlow">
+      <h2><i class="shape blue"></i>KausalFlow</h2>
+      {{ range site.Menus.footer }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+      <a href="https://github.com/kausalflow">GitHub</a>
+    </nav>
+  </div>
+  <p class="fine"><span>{{ site.Params.footer_info }}</span><span>{{ site.Params.copyright | markdownify }}</span></p>
+</footer>

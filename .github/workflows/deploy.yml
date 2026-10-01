@@ -17,7 +17,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.83.1'
+          hugo-version: '0.135.0'  # the site's own layouts need 0.128 or later
           # extended: true
 
       - name: Build
