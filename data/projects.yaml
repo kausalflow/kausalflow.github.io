@@ -27,6 +27,17 @@ featured:
       url: https://homeostat.kausalflow.com/docs/
 
 projects:
+  - name: Lightkone
+    text: >-
+      A web reference manager for researchers. Bring your own Claude key, keep papers in your own
+      storage (R2, S3 or GitHub), explore citations with Branches, connect it to AI assistants over
+      MCP, and script it with the lightkone Python CLI.
+    shape: triangle
+    color: blue
+    links:
+      - { name: Website, url: "https://lightkone.lab.kausalflow.com/" }
+      - { name: Documentation, url: "https://lightkone.lab.kausalflow.com/docs/" }
+      - { name: CLI, url: "https://pypi.org/project/lightkone/" }
   - name: HamilFlow
     text: Datasets of simple physical systems.
     shape: circle
